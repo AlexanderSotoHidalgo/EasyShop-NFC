@@ -6,6 +6,8 @@ import CajaRegistradora from "./pages/CajaRegistradora";
 import ResumenCompra from "./pages/ResumenCompra";
 import ConfirmarVenta from "./pages/ConfirmarVenta";
 import AlmacenProductos from "./pages/AlmacenProductos";
+import PantallaFinal from "./pages/pantallaFinal";
+import InterfazProductosCaja from "./pages/InterfazProductosCaja";
 
 export default function App() {
   return (
@@ -17,6 +19,8 @@ export default function App() {
         <Route path="/resumen" element={<ResumenCompra />} />
         <Route path="/confirmar" element={<ConfirmarVenta />} />
         <Route path="/almacen" element={<AlmacenProductos />} />
+        <Route path="/final" element={<PantallaFinal />} />
+        <Route path="/productos-caja" element={<InterfazProductosCaja />} />
       </Routes>
     </BrowserRouter>
   );

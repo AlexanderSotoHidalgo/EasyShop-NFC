@@ -1,0 +1,149 @@
+/* Colores basados en tu diseño */
+:root {
+  --azul-principal: #1A73E8;
+  --azul-oscuro: #0d59c4;
+  --fondo: #F3F6FF;
+  --gris-oscuro: #555;
+}
+
+.productos-wrapper {
+  background: var(--fondo);
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Barra superior */
+.productos-topbar {
+  background: var(--azul-principal);
+  color: white;
+  padding: 15px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Buscador */
+.productos-buscador {
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.buscador-input,
+.buscador-categorias {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.buscador-input {
+  flex: 1;
+}
+
+/* Grid */
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  padding: 15px;
+}
+
+/* Tarjetas */
+.producto-card {
+  background: white;
+  padding: 15px;
+  border-radius: 16px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: 0.2s;
+}
+
+.producto-card:hover {
+  transform: scale(1.03);
+}
+
+/* Emoji grande */
+.producto-icon {
+  font-size: 60px;
+  margin-bottom: 8px;
+}
+
+/* Info */
+.producto-info h3 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.producto-precio {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--azul-principal);
+}
+
+/* Botón Añadir */
+.producto-btn {
+  background: var(--azul-principal);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.producto-btn:hover {
+  background: var(--azul-oscuro);
+}
+
+/* Botón ir a caja */
+.btn-ir-caja {
+  width: 92%;
+  margin: 20px auto;
+  display: block;
+  background: #0F8B23;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn-ir-caja:hover {
+  background: #0D731C;
+}
+
+/* Botón volver */
+.btn-volver {
+  position: fixed;
+  bottom: 20px;
+  left: 15px;
+  width: 110px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--gris-oscuro);
+  color: white;
+  border: none;
+}
+
+/* ---------- SNACKBAR / BARRA DE MENSAJE ---------- */
+.snackbar {
+  position: fixed;
+  bottom: -80px; /* empieza oculto */
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--azul-principal); /* tu azul */
+  color: white;
+  padding: 15px 25px;
+  border-radius: 12px;
+  font-size: 18px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.25);
+  transition: bottom 0.4s ease;
+  z-index: 9999;
+}
+
+/* Estado visible */
+.snackbar.show {
+  bottom: 20px; /* sube hacia arriba */
+}

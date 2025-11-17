@@ -1,0 +1,20 @@
+.busqueda-container {
+  padding: 20px;
+}
+
+.busqueda-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.busqueda-results {
+  margin-top: 20px;
+}
+
+.busqueda-item {
+  background: white;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}

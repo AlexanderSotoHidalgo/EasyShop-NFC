@@ -1,0 +1,126 @@
+.confirmar-container {
+  background: #f3f6ff;
+  min-height: 100vh;
+  padding-bottom: 120px;
+  font-family: Arial, sans-serif;
+}
+
+/* Barra superior */
+.confirmar-topbar {
+  background: #1A73E8;
+  color: white;
+  padding: 18px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Caja principal */
+.confirmar-box {
+  background: white;
+  width: 90%;
+  margin: 25px auto;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+/* Total */
+.confirmar-total {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.confirmar-total h2 {
+  color: #0F8B23;
+  font-size: 28px;
+  margin: 0;
+}
+
+.confirmar-total p {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+/* Lista */
+.confirmar-lista {
+  margin-top: 10px;
+}
+
+.confirmar-item {
+  background: #faf7ff;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.item-icon {
+  font-size: 30px;
+  margin-right: 15px;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-nombre {
+  margin: 0;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.item-categoria {
+  margin: 0;
+  color: #8a8a8a;
+  font-size: 14px;
+}
+
+.item-precio {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Botones inferiores */
+.confirmar-botones {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.confirmar-botones button {
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-vaciar {
+  background: #d9534f;
+}
+
+.btn-deshacer {
+  background: #f0ad4e;
+}
+
+.btn-finalizar {
+  background: #28a745;
+}
+
+/* Volver */
+.volver-link {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  color: #1A73E8;
+  font-weight: bold;
+  text-decoration: none;
+}
